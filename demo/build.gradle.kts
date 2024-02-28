@@ -33,6 +33,8 @@ dependencies {
 	implementation("org.springframework.cloud:spring-cloud-starter-openfeign")
 	annotationProcessor("org.projectlombok:lombok")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
+	implementation("org.springframework.cloud:spring-cloud-starter-config")
+	implementation("org.springframework.cloud:spring-cloud-starter-bootstrap")
 }
 
 dependencyManagement {

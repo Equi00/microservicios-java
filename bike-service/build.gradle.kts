@@ -28,6 +28,15 @@ dependencies {
 	runtimeOnly("com.h2database:h2")
 	annotationProcessor("org.projectlombok:lombok")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
+	implementation("org.springframework.cloud:spring-cloud-starter-config")
+	implementation("org.springframework.cloud:spring-cloud-starter-bootstrap")
+}
+
+dependencyManagement {
+	imports {
+		val springCloudVersion = "2023.0.0"
+		mavenBom ("org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}")
+	}
 }
 
 tasks.withType<Test> {
