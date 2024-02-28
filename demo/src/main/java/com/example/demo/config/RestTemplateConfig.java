@@ -11,7 +11,7 @@ public class RestTemplateConfig {
 
     // lo inyectamos con el "bean"
     @Bean
-    @LoadBalanced
+    @LoadBalanced // creamos una instancia del rest template
     public RestTemplate restTemplate(){
         return new RestTemplate();
     }
