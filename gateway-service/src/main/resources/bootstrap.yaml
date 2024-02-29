@@ -5,21 +5,3 @@ spring:
     config:
       enabled: true
       uri: http://localhost:8081
-
-    gateway:
-      discovery:
-        locator:
-          enabled: true
-      routes:
-        - id: user-service
-          uri: lb://user-service
-          predicates:
-            - Path=/usuario/**
-        - id: car-service
-          uri: lb://car-service
-          predicates:
-            - Path=/car/**
-        - id: bike-service
-          uri: lb://bike-service
-          predicates:
-            - Path=/bike/**
