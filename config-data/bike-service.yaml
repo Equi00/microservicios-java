@@ -1,6 +1,6 @@
 server:
-  port: ${PORT:${SERVER_PORT:0}}
-eureka:
+  port: ${PORT:${SERVER_PORT:0}} # para evitar que hayan conflictos con puertos abiertos, se elegira un puerto de forma
+eureka:                          # aleatoria para cada microservicio
   client:
     fetch-registry: true
     register-with-eureka: true
