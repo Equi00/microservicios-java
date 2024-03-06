@@ -39,8 +39,9 @@ dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-actuator")
 	implementation("org.springframework.cloud:spring-cloud-starter-circuitbreaker-resilience4j")
 	implementation("org.springframework.boot:spring-boot-starter-aop:3.2.3")
-	implementation("org.springframework.cloud:spring-cloud-sleuth-zipkin:3.1.11")
-	implementation("org.springframework.cloud:spring-cloud-starter-sleuth:3.1.11")
+	implementation("io.micrometer:micrometer-observation")
+	implementation("io.micrometer:micrometer-tracing-bridge-brave")
+	implementation("io.zipkin.reporter2:zipkin-reporter-brave")
 }
 
 dependencyManagement {
