@@ -5,7 +5,7 @@ spring:
     config:
       server:
         git:
-          default-label: zipkin-sleuth # rama de la cual el config service debe ingresar
+          default-label: keycloak # rama de la cual el config service debe ingresar
           uri: https://github.com/Equi00/microservicios-java # repositorio al cual debe ingresar
           search-paths: config-data # los datos de los puertos de cada servicio
   application:
