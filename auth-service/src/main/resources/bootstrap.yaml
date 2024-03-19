@@ -7,4 +7,5 @@ spring:
       uri: http://localhost:8081
 
 jwt:
-  secret: secret
+  private-key-location: C:\Users\Usuario\Desktop\microservicios-curso\microservicio-en-java\auth-service\src\main\java\com\tutorial\authservice\private_key.pem
+  public-key-location: C:\Users\Usuario\Desktop\microservicios-curso\microservicio-en-java\auth-service\src\main\java\com\tutorial\authservice\public_key.pem

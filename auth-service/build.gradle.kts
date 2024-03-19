@@ -33,8 +33,8 @@ dependencies {
 	annotationProcessor("org.projectlombok:lombok")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	implementation("org.springframework.cloud:spring-cloud-starter-bootstrap")
-	implementation("io.jsonwebtoken:jjwt:0.9.1")
-	implementation("org.springframework.boot:spring-boot-starter-security")
+	implementation("io.jsonwebtoken:jjwt:0.12.5")
+	implementation("org.springframework.boot:spring-boot-starter-security:3.2.3")
 }
 
 dependencyManagement {
